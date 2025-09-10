@@ -1,4 +1,3 @@
-import React from "react";
 import { mapWeatherToStats, type Stat } from "@/data/stats";
 
 type DailyForecast = {

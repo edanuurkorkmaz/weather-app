@@ -1,5 +1,4 @@
 import { Loader } from "lucide-react";
-import React from "react";
 import { stats } from "@/data/stats";
 
 export default function Loading() {
