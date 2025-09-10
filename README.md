@@ -1,69 +1,44 @@
-# React + TypeScript + Vite
+# 🌤 Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Basit ve modern bir **hava durumu uygulaması**.  
+Kullanıcı bir şehir arayarak **anlık hava durumu**, **7 günlük tahmin** ve **saatlik tahmin** bilgilerini görüntüleyebilir.  
 
-Currently, two official plugins are available:
+Uygulama, [Open-Meteo API](https://open-meteo.com/) kullanılarak geliştirilmiştir.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Özellikler
+- 🔍 Şehir arama (Open-Meteo Geocoding API)  
+- 🌡️ Anlık sıcaklık, nem, rüzgar, yağış  
+- 📅 7 günlük tahmin (max/min sıcaklık, yağış)  
+- ⏰ Saatlik tahmin (24 saat)  
+- ⚡ Modern arayüz (React + TailwindCSS)  
+- 🔄 Yükleme animasyonu  
+- 🚫 Hata yakalama ve kullanıcıya bildirim (SweetAlert2)  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🖼️ Ekran Görüntüsü
+# 🌤 Weather App
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Basit ve modern bir **hava durumu uygulaması**.  
+Kullanıcı bir şehir arayarak **anlık hava durumu**, **7 günlük tahmin** ve **saatlik tahmin** bilgilerini görüntüleyebilir.  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Uygulama, [Open-Meteo API](https://open-meteo.com/) kullanılarak geliştirilmiştir.  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Özellikler
+- 🔍 Şehir arama (Open-Meteo Geocoding API)  
+- 🌡️ Anlık sıcaklık, nem, rüzgar, yağış  
+- 📅 7 günlük tahmin (max/min sıcaklık, yağış)  
+- ⏰ Saatlik tahmin (24 saat)  
+- ⚡ Modern arayüz (React + TailwindCSS)  
+- 🔄 Yükleme animasyonu  
+- 🚫 Hata yakalama ve kullanıcıya bildirim (SweetAlert2)  
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🖼️ Ekran Görüntüsü
+<img width="1201" height="732" alt="Screenshot 2025-09-10 at 11 52 29" src="https://github.com/user-attachments/assets/b55c8283-88bc-4aca-95ed-e1777055775b" />
+
